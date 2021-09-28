@@ -20,5 +20,5 @@ After the import, we will run an aggregate query to give us no. of products with
 <p>Ingest the same file at least 2 times before submitting the assignment, without truncating the products table. 
 (This is to validate how your code works in case of updates)</p>
 
-<h3> Refer to <a href="https://github.com/shreyanshjain7174/postman/tree/gh-pages" class="btn btn-primary">Go to Google</a></h3>
+<h3> Refer to <a href="https://github.com/shreyanshjain7174/postman/tree/gh-pages" class="btn btn-primary">Go to Instructions</a></h3>
   
