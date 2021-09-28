@@ -68,9 +68,17 @@ aggregate_query= INSERT INTO {}.PRODUCT_COUNT_DTL
 
 ## Results:
 --------------------------------------
-1. Total number of Products = 466693 (Remaining are updated because of same 'sku' values)
-2. Total Aggregation count = 212630
+1. Total number of Products = 500000 (Remaining are updated because of same 'sku' values)
+2. Total Aggregation count = 222024
 3. Sample 10 rows from products data:
+<img src="./data/table.png" width="300" height="100" />
+[products table](https://github.com/shreyanshjain7174/postman/blob/main/data/table.png)
+
+<img src="./data/sample.png" width="300" height="100" />
+[sample data](https://github.com/shreyanshjain7174/postman/blob/main/data/sample.png)
+
+<img src="./data/result.png" width="300" height="100" />
+[aggregate result](https://github.com/shreyanshjain7174/postman/blob/main/data/results.png)
 
 ## Points Achieved:
 -------------------------------------
