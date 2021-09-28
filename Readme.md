@@ -48,3 +48,18 @@ sudo usermod -aG docker $USER
 ```
 check the container name and then insert in the command.
 
+## Over all structure
+**Note : This just gives a rough representation of my thought process and will be helpful in understanding the overall thing. However it will map broadly with the code but may not map exactly.**
+
+### Database Creation Script:
+----------------------------
+```
+CREATE DATABASE IF NOT EXISTS DEV_S1 ; 
+```
+### Table Creation Script:
+```
+CREATE TABLE IF NOT EXISTS DEV_S1.PRODUCTS(NAME VARCHAR(50), SKU varchar(100), DESCRIPTION varchar(250));
+CREATE TABLE IF NOT EXISTS DEV_S1.PRODUCT_COUNT_DTL(PRODUCT_NAME varchar(50), NO_OF_PRODUCTS int);
+```
+## Author
+* [Shreyansh](https://github.com/shreyanshjain7174)
