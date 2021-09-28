@@ -60,6 +60,28 @@ CREATE DATABASE IF NOT EXISTS DEV_S1 ;
 ```
 CREATE TABLE IF NOT EXISTS DEV_S1.PRODUCTS(NAME VARCHAR(50), SKU varchar(100), DESCRIPTION varchar(250));
 CREATE TABLE IF NOT EXISTS DEV_S1.PRODUCT_COUNT_DTL(PRODUCT_NAME varchar(50), NO_OF_PRODUCTS int);
+
+aggregate_query= INSERT INTO {}.PRODUCT_COUNT_DTL
+                SELECT NAME PRODUCT_NAME, COUNT(NAME) NO_OF_PRODUCTS FROM {}.PRODUCTS 
+                GROUP BY NAME ORDER BY COUNT(NAME) DESC;
 ```
+
+## Results:
+--------------------------------------
+1. Total number of Products = 466693 (Remaining are updated because of same 'sku' values)
+2. Total Aggregation count = 212630
+3. Sample 10 rows from products data:
+
+## Points Achieved:
+-------------------------------------
+1. Code Followed OOPS concepts
+2. Supports for updating existing products in the table based on 'sku' as the primary key.
+3. All product tables are ingested into a single table.
+4. Created an aggregated table on above rows with name and no of products as columns.
+
+## Improvements:
+------------------------------------------
+Since time is a concern, To increase the speed of processing concepts such as Multi-processing can be used and to read and test, instead of pandas Pyspark
+can be used which is 100x as compared to the module being used in this code.
 ## Author
 * [Shreyansh](https://github.com/shreyanshjain7174)
