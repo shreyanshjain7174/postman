@@ -1,6 +1,6 @@
 
 <h1>Large file processor</h1>
-
+#
 <p >Aim is to build a system which is able to handle long running processes in a distributed fashion.</p>
 <h2> Problem statement</h2>
 
@@ -12,7 +12,7 @@ After the import, we will run an aggregate query to give us no. of products with
 <li>Your code should follow concept of OOPS
 <li>Support for regular non-blocking parallel ingestion of the given file into a table. Consider thinking about the scale of what should happen if the file is to be processed in 2 mins.
 <li>Support for updating existing products in the table based on `sku` as the primary key. (Yes, we know about the kind of data in the file. You need to find a workaround for it)
-<li>All product details are to be ingested into a single table
+<li>All product details are to be ingested inthttps://github.com/shreyanshjain7174/postmano a single table
 <li>An aggregated table on above rows with `name` and `no. of products` as the columns
 </ul>
 
@@ -20,4 +20,12 @@ After the import, we will run an aggregate query to give us no. of products with
 <p>Ingest the same file at least 2 times before submitting the assignment, without truncating the products table. 
 (This is to validate how your code works in case of updates)</p>
 
-<h3>Requirements</h3>
+<h2>Getting Started</h2>
+<h3>Installation </h3>
+
+<p><ul>
+  <li> Clone this repository </li>
+  <pre>
+  <code> git clone https://github.com/shreyanshjain7174/postman
+   cd postman </code></pre>
+  
